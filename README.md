@@ -1,16 +1,155 @@
-# React + Vite
+# 🛒 ShopZone – React E-Commerce SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+ShopZone is a modern Single Page Application (SPA) built using React.js. The application allows users to browse products, view product details, manage a shopping cart, authenticate as a guest user, and complete a protected checkout flow.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project demonstrates React fundamentals including routing, state management, context API, local storage persistence, and responsive UI design.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+### Product Browsing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* View all available products
+* Search products by name
+* Filter products by category
+* Responsive product grid layout
+
+### Product Details
+
+* Dynamic product detail pages using route parameters
+* Product image, description, pricing, and features
+* Add products to cart
+
+### Shopping Cart
+
+* Global cart state using Context API
+* Add and remove products
+* Update quantities
+* Automatic total price calculation
+* Persistent cart using LocalStorage
+
+### Authentication
+
+* Mock guest login
+* Global authentication state
+* Protected routes
+
+### Checkout Flow
+
+* Protected checkout page
+* Redirect unauthenticated users to login
+* Order placement flow
+* Order success page
+
+### Additional Pages
+
+* Home Page
+* Shop Page
+* Contact Page
+* Cart Page
+* Login Page
+* Checkout Page
+* Success Page
+
+---
+
+## Tech Stack
+
+* React.js
+* React Router DOM
+* Context API
+* LocalStorage
+* CSS3
+* Lucide React Icons
+* Vite
+
+---
+
+## Project Structure
+
+```text
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   └── ProtectedRoute.jsx
+│
+├── context/
+│   ├── CartContext.jsx
+│   └── AuthContext.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── Shop.jsx
+│   ├── ProductDetail.jsx
+│   ├── Cart.jsx
+│   ├── Login.jsx
+│   ├── Checkout.jsx
+│   ├── Success.jsx
+│   └── Contact.jsx
+│
+├── data/
+│   └── products.js
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate into the project:
+
+```bash
+cd shopzone
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## Learning Outcomes
+
+* React Component Architecture
+* Client-Side Routing
+* Dynamic Routes with useParams
+* Context API State Management
+* Local Storage Persistence
+* Protected Routes
+* Responsive Web Design
+* SPA Development Best Practices
+
+---
+
+## Author
+
+Varun B
+
+React.js | Full Stack Development | Frontend Engineering
